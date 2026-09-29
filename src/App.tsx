@@ -50,7 +50,7 @@ export default function App() {
             <Route path="/home.html" element={<HomePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-          <div className="pt-2 md:pt-3"><Footer /></div>
+          <div className="pt-0 md:pt-3"><Footer /></div>
         </motion.div>
 
       <WhatsAppButton />
