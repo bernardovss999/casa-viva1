@@ -123,8 +123,8 @@ const PrismaHero = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 60]);
 
   return (
-    <section ref={ref} className="w-full p-0 md:p-3">
-      <div className="relative min-h-[100svh] w-full overflow-hidden bg-terra md:rounded-[2rem]">
+    <section ref={ref} className="w-full p-0">
+      <div className="relative min-h-[100svh] w-full overflow-hidden bg-terra">
         {/* Emblem pattern backdrop (vector — never pixelates) */}
         <motion.div style={{ rotate }} className="pointer-events-none absolute -left-40 -top-40 text-terra-deep/70">
           <Emblem className="h-[46rem] w-[46rem]" strokeWidth={1.4} />

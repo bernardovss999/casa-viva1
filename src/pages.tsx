@@ -12,8 +12,8 @@ import { Visit } from "@/sections/Visit";
 
 /* Rounded panel with a gap around it. overflow-clip (not hidden) keeps position: sticky working. */
 const Panel = ({ children }: { children: React.ReactNode }) => (
-  <div className="px-0 pt-0 md:px-3 md:pt-3">
-    <div className="overflow-clip md:rounded-[2rem]">{children}</div>
+  <div className="p-0">
+    <div className="overflow-clip">{children}</div>
   </div>
 );
 

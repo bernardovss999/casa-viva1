@@ -39,8 +39,8 @@ export const PageHero = ({ n, title, italic, text, img, pos = "center" }: { n: s
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const scale = useTransform(scrollYProgress, [0, 1], [1.05, 1.25]);
   return (
-    <section ref={ref} className="px-0 pt-0 md:px-3 md:pt-3">
-      <div className="relative flex min-h-[78svh] items-end overflow-hidden bg-terra text-cream md:rounded-[2rem]">
+    <section ref={ref} className="p-0">
+      <div className="relative flex min-h-[78svh] items-end overflow-hidden bg-terra text-cream">
         <motion.img style={{ y, scale, objectPosition: pos }} src={f(img)} alt="" className="absolute inset-0 h-full w-full object-cover opacity-45" />
         <div className="absolute inset-0 bg-gradient-to-t from-terra via-terra/60 to-terra/10" />
         <div className="pointer-events-none absolute -right-20 -top-20 text-cream/10"><Emblem className="h-[30rem] w-[30rem]" strokeWidth={1.2} /></div>
