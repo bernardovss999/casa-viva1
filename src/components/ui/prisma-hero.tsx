@@ -180,9 +180,8 @@ const PrismaHero = () => {
                 className="relative aspect-[9/16] w-full overflow-hidden rounded-t-full rounded-b-[28px] border-[6px] border-cream shadow-2xl"
               >
                 <video
-                  autoPlay loop muted playsInline preload="auto"
+                  autoPlay loop muted playsInline preload="metadata"
                   poster="/fotos/DcRFflGlaYF_03.jpg"
-                  onLoadedMetadata={(e) => { if (e.currentTarget.duration > 12) e.currentTarget.currentTime = 6; }}
                   className="absolute inset-0 h-full w-full object-cover"
                   src="/videos/hero.mp4"
                 />
