@@ -34,6 +34,7 @@ export const SiteHeader = () => {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+      style={{ top: "var(--sett-off, 0px)" }}
       className="fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-6 md:pt-5"
     >
       <div

@@ -1,6 +1,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { SettBanner } from "@/components/SettBanner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { WhatsAppButton } from "@/components/PageParts";
 import { Footer } from "@/sections/Footer";
@@ -29,7 +30,8 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-sand">
-      <motion.div style={{ scaleX: bar }} className="fixed inset-x-0 top-0 z-[60] h-1 origin-left bg-sun" />
+      <SettBanner />
+      <motion.div style={{ scaleX: bar, top: "var(--sett-off, 0px)" }} className="fixed inset-x-0 top-0 z-[60] h-1 origin-left bg-sun" />
       <SiteHeader />
 
         <motion.div
